@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NavbarHome from '../NavbarHome/NavbarHome'
 import About from '../About/About'
+import Product from '../Product/Product'
 
 class Homepage extends Component {
   render() {
@@ -8,6 +9,7 @@ class Homepage extends Component {
       <div>
         <NavbarHome />
         <About />
+        <Product />
       </div>
     )
   }
