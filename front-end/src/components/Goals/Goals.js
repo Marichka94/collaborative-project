@@ -1,26 +1,24 @@
-import React, { Component } from 'react'
-import './Goals.css'
+import React, { Component } from "react";
+import "./Goals.css";
 
 class Goals extends Component {
-
   render() {
+    let list = this.props.goals.map(item => {
+      return (
+        <div key={item.name}>
+        <h1>{item.goal}</h1>
+        <h1>{item.dueDate}</h1>
+        <h1>{item.tasks}</h1>
+        </div>
+      )
+    })
     return (
+      this.props.goals.length > 0 ? 
       <div>
-        <h1>{this.props.goals.goal}</h1>
-        <h1>{this.props.goals.dueDate}</h1>
-        <h1>{this.props.goals.tasks[0]}</h1>
-        <h1>{this.props.goals.tasks[1]}</h1>
-      </div>
+        {list}
+      </div> : null
     )
-  }
+}
 }
 
-// Goals.defaultProps = {
-//   goals:   {
-//     goal: "this is the asdfasdf test goal",
-//     dueDate: "asdfasdf 31, 2018",
-//     tasks: ["test task asdfasf", "test task adsfs"]
-//   }
-// }
-
-export default Goals
+export default Goals;

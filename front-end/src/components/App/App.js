@@ -13,14 +13,18 @@ class App extends Component {
     };
   }
 
-  componentWillMount() {
-    fetch("http://localhost:3001/api/goals")
-    .then(response => response.json())
-    .then(goals =>
-      this.setState({
-        goals: goals
-      })
-    );
+  componentDidMount() {
+    this.getGoals()
+  }
+
+  getGoals = () => {
+    fetch('http://localhost:3001/api/goals')
+      .then(response => response.json())
+      .then(goals =>
+        this.setState({
+          goals: goals
+        })
+      )
   }
 
   render() {
@@ -29,12 +33,17 @@ class App extends Component {
         <Footer />
         <main>
           <Switch>
-            <Route
+          <Route
               path="/goals"
               render={props => {
-                return <Goals {...props} />;
+                return (
+                  <Goals
+                    goals={this.state.goals}
+                    {...props}
+                  />
+                )
               }}
-            />
+              />
             <Route to="/"/>
             <Route to="/"/>
           </Switch>
