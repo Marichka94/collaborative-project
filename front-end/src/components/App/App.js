@@ -1,67 +1,49 @@
-import React, { Component } from 'react'
-import {Route, Link, Switch} from 'react-router-dom'
-import './App.css';
-import Homepage from '../Homepage/Homepage'
-import Footer from '../Footer/Footer'
-import Goals from '../Goals/Goals'
+import React, { Component } from "react";
+import { Route, Link, Switch } from "react-router-dom";
+import "./App.css";
+import Homepage from "../Homepage/Homepage";
+import Footer from "../Footer/Footer";
+import Goals from "../Goals/Goals";
 
 class App extends Component {
-  constructor () {
-    super()
+  constructor(props) {
+    super(props);
     this.state = {
       goals: []
-    }
+    };
   }
 
   componentDidMount() {
-    this.getGoals()
+    this.getGoals();
   }
 
   getGoals = () => {
-    fetch('http://localhost:3001/api/goals')
+    fetch("http://localhost:3001/api/goals")
       .then(response => response.json())
       .then(goals =>
         this.setState({
           goals: goals
         })
-      )
-  }
+      );
+  };
 
   render() {
     return (
-<<<<<<< HEAD
       <div className="App">
-        <Homepage />
-        <Footer />
-      <main>
-        <Switch>
-         <Route
+        {/* <Homepage />
+        <Footer /> */}
+        <main>
+          <Switch>
+            <Route
               path="/goals"
               render={props => {
-                return <Goals {...props} />
+                return <Goals {...props} />;
               }}
             />
-          <Route to="/"/>
-          <Route to="/"/>
-        </Switch>
-        </main>
-=======
-      <div>
-        <div className="App">
-          {/* <Homepage /> */}
-          <Footer />
-        </div>
-        <div>
-          <Switch>
-            <Route to="/"/>
-            <Route to="/"/>
-            <Route to="/"/>
           </Switch>
-        </div>
->>>>>>> 711ce0c1fb50e192830bbb207a759cdc23056e55
+        </main>
       </div>
-    )
-  }
+    )}
 }
 
-export default App
+export default App;
