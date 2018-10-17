@@ -1,0 +1,8 @@
+.about {
+  margin: 0 auto;
+  width: 50vw;
+  text-align: center;
+}
+.about > img {
+  width: 40vw;
+}
