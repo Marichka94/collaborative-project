@@ -13,19 +13,15 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    this.getGoals();
-  }
-
-  getGoals = () => {
+  componentWillMount() {
     fetch("http://localhost:3001/api/goals")
-      .then(response => response.json())
-      .then(goals =>
-        this.setState({
-          goals: goals
-        })
-      );
-  };
+    .then(response => response.json())
+    .then(goals =>
+      this.setState({
+        goals: goals
+      })
+    );
+  }
 
   render() {
     return (

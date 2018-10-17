@@ -3,7 +3,6 @@ import './Goals.css'
 
 class Goals extends Component {
 
-
   render() {
     return (
       <div>
@@ -16,12 +15,12 @@ class Goals extends Component {
   }
 }
 
-Goals.defaultProps = {
-  goals:   {
-    goal: "this is the asdfasdf test goal",
-    dueDate: "asdfasdf 31, 2018",
-    tasks: ["test task asdfasf", "test task adsfs"]
-  }
-}
+// Goals.defaultProps = {
+//   goals:   {
+//     goal: "this is the asdfasdf test goal",
+//     dueDate: "asdfasdf 31, 2018",
+//     tasks: ["test task asdfasf", "test task adsfs"]
+//   }
+// }
 
 export default Goals
