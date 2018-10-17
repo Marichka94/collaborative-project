@@ -35,6 +35,8 @@ class App extends Component {
                 return <Goals {...props} />;
               }}
             />
+            <Route to="/"/>
+            <Route to="/"/>
           </Switch>
         </main>
       </div>
