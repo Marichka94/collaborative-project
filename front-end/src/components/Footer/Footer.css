@@ -4,3 +4,10 @@
 nav {
   background-color: #011627;
 }
+.footer {
+  margin-top: 30vh;
+}
+.image-size > img {
+  width: 40px;
+  padding: 5px;
+}
