@@ -3,7 +3,7 @@ import image from './image/item-one-logo.png'
 import './Product.css'
 
 class ItemOne extends Component {
-  
+
   handleChange = () => {
     console.log('Item one clicked!')
   }
@@ -11,7 +11,7 @@ class ItemOne extends Component {
   render() {
     return (
       <div className='product-image' onClick={this.handleChange}>
-        <img src={image}/>
+        <img src={image} alt='item-one-logo'/>
         <p className="description">Track your progress compared to the rest of the company</p>
       </div>
     )

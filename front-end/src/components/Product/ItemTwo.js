@@ -11,7 +11,7 @@ class ItemTwo extends Component {
   render() {
     return (
       <div className='product-image' onClick={this.handleChange}>
-        <img src={image}/>
+        <img src={image} alt='item-two-logo'/>
         <p className="description">Create a roadmap to track your goals</p>
       </div>
     )
