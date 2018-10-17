@@ -9,7 +9,8 @@ class Goals extends Component {
       <div>
         <h1>{this.props.goals.goal}</h1>
         <h1>{this.props.goals.dueDate}</h1>
-        <h1>{this.props.goals.tasks}</h1>
+        <h1>{this.props.goals.tasks[0]}</h1>
+        <h1>{this.props.goals.tasks[1]}</h1>
       </div>
     )
   }

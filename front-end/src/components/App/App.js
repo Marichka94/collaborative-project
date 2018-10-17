@@ -30,8 +30,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Homepage />
-        <Footer /> */}
+        <Footer />
         <main>
           <Switch>
             <Route
