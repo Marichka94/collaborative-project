@@ -1,0 +1,12 @@
+[
+  {
+    "goal": "this is the first test goal",
+    "dueDate": "October 31, 2018",
+    "tasks": ["test task 1", "test task 2"]
+  },
+  {
+    "goal": "this is the second test goal",
+    "dueDate": "November 3, 2018",
+    "tasks": ["test task 1", "test task 2"]
+  }
+]
