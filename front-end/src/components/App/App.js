@@ -29,6 +29,7 @@ class App extends Component {
 
   render() {
     return (
+<<<<<<< HEAD
       <div className="App">
         <Homepage />
         <Footer />
@@ -44,6 +45,20 @@ class App extends Component {
           <Route to="/"/>
         </Switch>
         </main>
+=======
+      <div>
+        <div className="App">
+          {/* <Homepage /> */}
+          <Footer />
+        </div>
+        <div>
+          <Switch>
+            <Route to="/"/>
+            <Route to="/"/>
+            <Route to="/"/>
+          </Switch>
+        </div>
+>>>>>>> 711ce0c1fb50e192830bbb207a759cdc23056e55
       </div>
     )
   }
