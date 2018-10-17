@@ -7,16 +7,18 @@ import Footer from '../Footer/Footer'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Homepage />
-        <Footer />
-      </div>
       <div>
-        <Switch>
-          <Route to="/"/>
-          <Route to="/"/>
-          <Route to="/"/>
-        </Switch>
+        <div className="App">
+          {/* <Homepage /> */}
+          <Footer />
+        </div>
+        <div>
+          <Switch>
+            <Route to="/"/>
+            <Route to="/"/>
+            <Route to="/"/>
+          </Switch>
+        </div>
       </div>
     )
   }
