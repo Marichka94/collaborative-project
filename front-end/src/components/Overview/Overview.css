@@ -1,0 +1,21 @@
+.gauge {
+  width: 25vw;
+}
+.text-size {
+  font-size: 30px;
+}
+.ov-box {
+  padding: 20px;
+  margin: 20px auto;
+  width: 50vw;
+  background-color: #F8F8F8;
+  border-radius: 10px;
+}
+
+.number {
+  font-size: 120px;
+  margin-top: -20px;
+}
+.star {
+  height: 50px;
+}
