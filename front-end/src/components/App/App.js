@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { Route, Link, Switch } from "react-router-dom";
 import "./App.css";
 import Homepage from "../Homepage/Homepage";
-import Footer from "../Footer/Footer";
+
 import Goals from "../Goals/Goals";
+import Userpage from "../Userpage/Userpage";
 
 class App extends Component {
   constructor(props) {
@@ -30,11 +31,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Homepage />
-        <Footer />
         <main>
           <Switch>
-          <Route
+            <Route
               path="/goals"
               render={props => {
                 return (
@@ -44,9 +43,9 @@ class App extends Component {
                   />
                 )
               }}
-              />
-            <Route to="/"/>
-            <Route to="/"/>
+            />
+            <Route path="/userpage" component={Userpage}/>
+            <Route exact path="/" component={Homepage}/>
           </Switch>
         </main>
       </div>

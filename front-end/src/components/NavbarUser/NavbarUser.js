@@ -12,8 +12,8 @@ const NavbarUser = () => {
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
       <div className="d-flex align-items-center">
-        <h5 className="text-light mr-3">+ Company Info</h5>
-        <NavLink to="/" className="btn btn-light rounded-circle m-2 w-5 h-5">Dog</NavLink>
+        <p className="text-light mr-3 mt-3">+ Company Info</p>
+        <a className="btn btn-light rounded-circle m-2 w-5 h-5">A</a>
       </div>
       </nav>
   )
