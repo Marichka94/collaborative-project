@@ -1,31 +1,14 @@
 import React, { Component } from 'react'
-import image from './image/item-one-logo.png'
+import image from './image/item-one.png'
 import './Product.css'
 
 class ItemOne extends Component {
 
-  state = {
-    clicked: false
-  }
-
-  handleChange = () => {
-    if (this.state.clicked === false) {
-    this.setState({
-      clicked: true
-    })
-  } else {
-    this.setState({
-      clicked: false
-    })
-  }
-    console.log(this.state.clicked)
-  }
-
   render() {
     return (
-      <div className='product-image' onClick={this.handleChange}>
-        <img src={image} alt='item-one-logo'/>
-        <p className="description">Track your progress compared to the rest of the company</p>
+      <div className='d-flex flex-wrap align-items-center box'>
+        <p className="paragraph text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
+        <img className="pic" src={image} alt='item-one'/>
       </div>
     )
   }

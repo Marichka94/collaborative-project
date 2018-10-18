@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
-import image from './image/item-two-logo.png'
+import image from './image/item-two.png'
 import './Product.css'
 
 class ItemTwo extends Component {
 
-  handleChange = () => {
-    console.log('Item two clicked!')
-  }
-
   render() {
     return (
-      <div className='product-image' onClick={this.handleChange}>
-        <img src={image} alt='item-two-logo'/>
-        <p className="description">Create a roadmap to track your goals</p>
+      <div className='d-flex flex-wrap align-items-center box'>
+        <img className="pic" src={image} alt='item-two'/>
+        <p className="paragraph text-left">Ex magna labore enim incididunt, dolor cohaerescant excepteur velit ingeniis, irure iis sed culpa quamquam ad eram quamquam quo sint multos. Ingeniis ita noster expetendis ut ad multos concursionibus.</p>
       </div>
     )
   }
