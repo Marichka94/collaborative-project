@@ -1,5 +1,12 @@
 .brand {
   color: #5A9693;
+  display: inline-block;
+  font-size: 50px;
+  margin-left: 30px;
+}
+.brand:hover {
+  text-decoration: none;
+  color: #5A9693;
 }
 nav {
   background-color: #011627;

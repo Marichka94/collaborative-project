@@ -5,7 +5,7 @@ import '../NavbarHome/NavbarHome.css'
 const NavbarUser = () => {
   return (
     <nav className="p-2 d-flex justify-content-between align-items-center">
-      <h1 className='brand pl-3'>Atruity</h1>
+      <NavLink to="/" className='brand pl-3'>Atruity</NavLink>
 
       <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>

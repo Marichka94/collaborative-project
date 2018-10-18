@@ -8,7 +8,7 @@ const NavbarHome = () => {
   return (
     <div>
       <nav className="p-2 d-flex justify-content-between align-items-center">
-        <h1 className='brand pl-3'>Atruity</h1>
+        <NavLink to="/" className='brand pl-3'>Atruity</NavLink>
         <NavLink className="pr-3 link" to='/userpage'>Log In</NavLink>
       </nav>
       <div className="text-center crop">
