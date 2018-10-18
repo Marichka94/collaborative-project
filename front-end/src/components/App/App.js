@@ -5,8 +5,6 @@ import Homepage from "../Homepage/Homepage";
 import Footer from "../Footer/Footer";
 import GoalsList from "../GoalsList/GoalsList";
 import AddGoal from "../AddGoal/AddGoal";
-
-import Goals from "../Goals/Goals";
 import Userpage from "../Userpage/Userpage";
 
 class App extends Component {
