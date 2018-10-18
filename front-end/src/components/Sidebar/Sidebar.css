@@ -2,9 +2,18 @@
   background-color: #011627;
   width: 20vw;
   color: white;
+  text-decoration: none;
+}
+.sidebar-item {
+  color: white;
 }
 .sidebar-item:hover {
   background-color: white;
   color: black;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.sidebar > div > a:hover{
+  text-decoration: none;
 }

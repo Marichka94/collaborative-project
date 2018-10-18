@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Marichka94/collaborative-project/issues"
   },
-  "homepage": "https://github.com/Marichka94/collaborative-project#readme"
+  "homepage": "https://github.com/Marichka94/collaborative-project#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }

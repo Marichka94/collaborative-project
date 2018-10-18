@@ -14,7 +14,7 @@ class Userpage extends Component {
   }
 
   isClicked() {
-    
+
   }
 
   render() {
@@ -27,7 +27,6 @@ class Userpage extends Component {
             {this.state.currentState}
           </div>
         </div>
-        <Footer />
       </div>
     )
   }
