@@ -1,12 +1,38 @@
 [
   {
-    "goal": "this is the first test goal",
+    "name": "this is the first test goal",
     "dueDate": "October 31, 2018",
-    "tasks": ["test task 1", "test task 2"]
+    "tasks": [
+      {
+        "name2": "test task 1",
+        "dept": "dept 1",
+        "teamLead": "team lead 1",
+        "progress": "complete",
+        "dueDate2": "Nov 2, 2018",
+        "priority": "high"
+      },
+      {
+        "name2": "test task 2",
+        "dept": "dept 2",
+        "teamLead": "team lead 2",
+        "progress": "in progress",
+        "dueDate2": "Oct 10, 2018",
+        "priority": "low"
+      }
+  ]
   },
   {
-    "goal": "this is the second test goal",
+    "name": "this is the second test goal",
     "dueDate": "November 3, 2018",
-    "tasks": ["test task 1", "test task 2"]
+    "tasks": [
+      {
+        "name2": "test task 3",
+        "dept": "dept 3",
+        "teamLead": "team lead 3",
+        "progress": "complete",
+        "dueDate2": "Sept. 2, 2018",
+        "priority": "high"
+      }
+  ]
   }
 ]

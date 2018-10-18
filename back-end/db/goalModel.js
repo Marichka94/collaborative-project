@@ -1,13 +1,18 @@
 const mongoose = require('./connection.js')
 
 const GoalSchema = new mongoose.Schema ({
-  goal: String,
+  name: String,
   dueDate: String,
-  tasks: Array
+  tasks: [
+    {
+      name2: String,
+      dept: String,
+      teamLead: String,
+      progress: String,
+      dueDate2: String,
+      priority: String
+    }
+  ]
 })
 
-const Goal = mongoose.model('Goal', GoalSchema)
-
-module.exports= {
-  Goal
-}
+module.exports= mongoose.model("Goal", GoalSchema)
