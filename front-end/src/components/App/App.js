@@ -6,6 +6,9 @@ import Footer from "../Footer/Footer";
 import GoalsList from "../GoalsList/GoalsList";
 import AddGoal from "../AddGoal/AddGoal";
 
+import Goals from "../Goals/Goals";
+import Userpage from "../Userpage/Userpage";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -50,12 +53,8 @@ class App extends Component {
                 return <AddGoal {...props} />
               }}
             />
-            <Route
-              path="/"
-              render={props => {
-                return <Homepage {...props}/>;
-              }}
-            />
+            <Route path="/userpage" component={Userpage}/>
+            <Route exact path="/" component={Homepage}/>
           </Switch>
         </main>
         <Footer />
