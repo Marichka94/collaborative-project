@@ -39,24 +39,24 @@ handleClick = (e) => {
 
   render() {
     return (
-      <div className="product">
+      <div className="product shadow pt-5 pb-5">
         <h1 id="product">Why Atruity?</h1>
         <div className="d-flex flex-wrap justify-content-around align-items-top items">
-          <div onClick={this.handleClick} className='product-image'>
+          <div onMouseOver={this.handleClick} className='product-image hover'>
             <img id='item-one' src={imageOne} alt='item-one-logo'/>
-            <p className="description">Track your progress compared to the rest of the company</p>
+            <p id='item-one' className="description">Track your progress compared to the rest of the company</p>
           </div>
-          <div onClick={this.handleClick} className='product-image'>
+          <div onMouseOver={this.handleClick} className='product-image hover'>
             <img id='item-two' src={imageTwo} alt='item-two-logo'/>
-            <p className="description">Create a roadmap to track your goals</p>
+            <p id='item-two' className="description">Create a roadmap to track your goals</p>
           </div>
-          <div onClick={this.handleClick} className='product-image'>
+          <div onMouseOver={this.handleClick} className='product-image hover'>
             <img id='item-three' src={imageThree} alt='item-three-logo'/>
-            <p className="description">Work closely with your colleagues</p>
+            <p id='item-three' className="description">Work closely with your colleagues</p>
           </div>
-          <div onClick={this.handleClick} className='product-image'>
+          <div onMouseOver={this.handleClick} className='product-image hover big-one'>
             <img id='item-four' src={imageFour} alt='item-four-logo'/>
-            <p className="description">Ensure you're always meeting your goals</p>
+            <p id='item-four' className="description">Ensure you're always meeting your goals</p>
           </div>
         </div>
         <div className="m-5">

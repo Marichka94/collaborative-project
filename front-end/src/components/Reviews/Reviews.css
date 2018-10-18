@@ -9,3 +9,8 @@
   height: 200px;
   margin: 20px;
 }
+.comment {
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+}
