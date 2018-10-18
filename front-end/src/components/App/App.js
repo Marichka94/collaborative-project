@@ -7,6 +7,9 @@ import GoalsList from "../GoalsList/GoalsList";
 import AddGoal from "../AddGoal/AddGoal";
 import Userpage from "../Userpage/Userpage";
 import axios from 'axios'
+import Overview from "../Overview/Overview"
+import Roadmap from "../Roadmap/Roadmap"
+import Education from "../Education/Education"
 
 class App extends Component {
   constructor(props) {
@@ -34,7 +37,7 @@ class App extends Component {
     })
     .catch(function (error) {
       console.log(error);
-    });    
+    });
   };
 
   render() {
@@ -54,11 +57,14 @@ class App extends Component {
                 return <AddGoal {...props} goals={this.state.goals} addGoal={this.addGoal} />
               }}
             />
+            <Route path="/overview" component={Overview}/>
+            <Route path="/roadmap" component={Roadmap}/>
+            <Route path="/goalslist" component={GoalsList}/>
+            <Route path="/education" component={Education}/>
             <Route path="/userpage" component={Userpage}/>
             <Route exact path="/" component={Homepage}/>
           </Switch>
         </main>
-        <Footer />
       </div>
     );
   }
