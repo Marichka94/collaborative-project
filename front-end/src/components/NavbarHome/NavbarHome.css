@@ -4,20 +4,21 @@
 nav {
   background-color: #011627;
 }
-/* .image {
-  width: 100%;
-  overflow: hidden;
-} */
-
 .crop {
   width: 100vw;
   overflow: hidden;
   margin: 0;
   height: 30vh;
 }
-
 .crop img {
   display: block;
   width: 100%;
   margin: -21.875% 0;
+}
+.link {
+  color: white;
+}
+.link:hover {
+  text-decoration: none;
+  color: #5A9693;
 }
