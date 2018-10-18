@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 import axios from 'axios'
 
 class AddGoal extends Component {
   constructor() {
     super()
     this.state = {
-      name: '',
-      dueDate: '',
-      tasks:[]
+        name: '',
+        dueDate: '',
+        tasks: []
     }
   }
 
@@ -18,7 +19,6 @@ class AddGoal extends Component {
   }
 
   addGoal = e => {
-    e.preventDefault()
     axios.post('http://localhost:3001/api/goals', this.state)
     .then(function (response) {
       console.log(response);
@@ -26,11 +26,10 @@ class AddGoal extends Component {
     .catch(function (error) {
       console.log(error);
     });
-    this.props.history('/goals')
   }
 
-
   render() {
+    console.log(this.props.goals)
     return (
       <div>
         <form>
@@ -50,6 +49,7 @@ class AddGoal extends Component {
           />
           <button onClick={this.addGoal}>Submit</button>
         </form>
+        <Link to="/goals">Goals</Link>
       </div>
     )
   }

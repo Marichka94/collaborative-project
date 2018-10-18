@@ -7,18 +7,23 @@ import TasksList from '../TasksList/TasksList'
 class GoalsList extends Component {
 
   render() {
+    console.log(this.props.goals)
+    let list = this.props.goals.map(goal => {
+      return (
+        <div key={goal.name}>
+        <Goal goal={goal} />
+        <TasksList key={goal.tasks} tasks={goal.tasks}/>
+        </div>
+      )
+    })
     return (
       <div>
         <Link to="/add_goal" >Add Goal</Link>
-        {this.props.goals.map(goal => (
-          <div>
-          <Goal key={goal.name} goal={goal} />
-          <TasksList key={goal.tasks} tasks={goal.tasks}/>
-          </div>
-        ))}
+        {list}
       </div>
     )
   }
 }
 
 export default GoalsList;
+

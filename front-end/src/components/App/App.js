@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import GoalsList from "../GoalsList/GoalsList";
 import AddGoal from "../AddGoal/AddGoal";
 import Userpage from "../Userpage/Userpage";
+import axios from 'axios'
 
 class App extends Component {
   constructor(props) {
@@ -24,14 +25,16 @@ class App extends Component {
   }
 
   getGoals = () => {
-    fetch("http://localhost:3001/api/goals")
-      .then(response => response.json())
-      .then(goals =>
-        this.setState({
-          goals: goals,
-          tasks: goals.tasks
-        })
-      );
+    axios.get("http://localhost:3001/api/goals")
+    .then(response => {
+      const goals = response.data
+      this.setState({
+        goals: goals
+      })
+    })
+    .catch(function (error) {
+      console.log(error);
+    });    
   };
 
   render() {
@@ -42,13 +45,13 @@ class App extends Component {
             <Route
               path="/goals"
               render={props => {
-                return <GoalsList goals={this.state.goals} {...props} />;
+                return <GoalsList {...props} goals={this.state.goals} />;
               }}
             />
             <Route
               path="/add_goal"
               render={props => {
-                return <AddGoal {...props} />
+                return <AddGoal {...props} goals={this.state.goals} addGoal={this.addGoal} />
               }}
             />
             <Route path="/userpage" component={Userpage}/>
