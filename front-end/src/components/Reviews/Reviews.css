@@ -1,0 +1,11 @@
+.reviews {
+  margin: 50px auto;
+  width: 70vw;
+  text-align: center;
+}
+.review-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}

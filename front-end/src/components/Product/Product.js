@@ -34,11 +34,30 @@ class Product extends Component {
     image: null
   }
 
+  // handleChange = () => {
+  //   if (this.state.ItemOne === false) {
+  //   this.setState({
+  //     clicked: true
+  //   })
+  // } else {
+  //   this.setState({
+  //     clicked: false
+  //   })
+  // }
+  //   console.log(this.state.clicked)
+  // }
+
   render() {
     return (
       <div className="product">
-        <h1>Why Atruity?</h1>
+        <h1 id="product">Why Atruity?</h1>
         <div className="d-flex justify-content-around align-items-top items">
+          
+          {/* <div className='product-image' onClick={this.handleChange}>
+            <img src="https://dxlfb468n8ekd.cloudfront.net/gsc/Z1SI0X/25/99/6c/25996c162c5f4e5784beb9136c322464/images/home/u8.png?token=016fa69c138e916c272eb7fb995b8ab4" alt='item-one-logo'/>
+            <p className="description">Track your progress compared to the rest of the company</p>
+          </div> */}
+
           <ItemOne />
           <ItemTwo />
           <ItemThree />

@@ -4,8 +4,21 @@ import './Product.css'
 
 class ItemOne extends Component {
 
+  state = {
+    clicked: false
+  }
+
   handleChange = () => {
-    console.log('Item one clicked!')
+    if (this.state.clicked === false) {
+    this.setState({
+      clicked: true
+    })
+  } else {
+    this.setState({
+      clicked: false
+    })
+  }
+    console.log(this.state.clicked)
   }
 
   render() {
