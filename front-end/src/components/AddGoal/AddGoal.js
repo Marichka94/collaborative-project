@@ -14,7 +14,7 @@ class AddGoal extends Component {
 
   onChangeText = e => {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     })
   }
 
@@ -26,6 +26,14 @@ class AddGoal extends Component {
     .catch(function (error) {
       console.log(error);
     });
+  }
+
+  delete = e => {
+    axios.delete('http://localhost:3001/api/goals/:id')
+    .then(response => {
+      console.log(response)
+      console.log(response.data)
+    })
   }
 
   render() {

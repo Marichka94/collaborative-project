@@ -8,26 +8,6 @@ app.set('port', process.env.PORT || 3001)
 app.use(parser.json())
 app.use(cors())
 
-app.get('/api/goals', (req, res) => {
-  Goal.find()
-  .then((goals) => {
-    res.json(goals)
-  })
-  .catch((err) => {
-    console.log(err)
-  })
-})
-
-app.post('/api/goals', (req, res) => {
-  Goal.create(req.body)
-    .then((goal) => {
-      res.json(goal)
-    })
-    .catch((err) => {
-      console.log(err)
-    })
-})
-
 app.listen(app.get('port'), () => {
   console.log('Server listening on port ' + app.get('port'))
 })

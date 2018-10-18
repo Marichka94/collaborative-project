@@ -4,7 +4,7 @@ import NavbarUser from "../NavbarUser/NavbarUser"
 import Sidebar from "../Sidebar/Sidebar"
 import Overview from "../Overview/Overview"
 import Roadmap from "../Roadmap/Roadmap"
-import Goals from "../Goals/Goals"
+import GoalsList from "../GoalsList/GoalsList"
 import Education from "../Education/Education"
 import './Userpage.css'
 

@@ -7,7 +7,6 @@ import TasksList from '../TasksList/TasksList'
 class GoalsList extends Component {
 
   render() {
-    console.log(this.props.goals)
     let list = this.props.goals.map(goal => {
       return (
         <div key={goal.name}>

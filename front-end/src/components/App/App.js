@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import GoalsList from "../GoalsList/GoalsList";
 import AddGoal from "../AddGoal/AddGoal";
 import Userpage from "../Userpage/Userpage";
+import ShowGoal from "../ShowGoal/ShowGoal";
 import axios from 'axios'
 
 class App extends Component {
@@ -51,7 +52,13 @@ class App extends Component {
             <Route
               path="/add_goal"
               render={props => {
-                return <AddGoal {...props} goals={this.state.goals} addGoal={this.addGoal} />
+                return <AddGoal {...props} goals={this.state.goals} />
+              }}
+            />
+             <Route
+              path="/show/:name"
+              render={props => {
+                return <ShowGoal {...props} goals={this.state.goals} />
               }}
             />
             <Route path="/userpage" component={Userpage}/>

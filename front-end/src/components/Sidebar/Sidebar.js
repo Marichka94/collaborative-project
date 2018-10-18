@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Sidebar.css'
 import Overview from "../Overview/Overview"
 import Roadmap from "../Roadmap/Roadmap"
-import Goals from "../Goals/Goals"
+import GoalsList from "../GoalsList/GoalsList"
 import Education from "../Education/Education"
 
 class Sidebar extends Component {
@@ -20,7 +20,7 @@ state = {
     } else if (e.target.id === 'goals') {
       console.log(this.state.currentState)
       this.setState({
-        currentState: <Goals />
+        currentState: <GoalsList />
       })
     } else if (e.target.id === 'roadmap') {
       console.log(this.state.currentState)
