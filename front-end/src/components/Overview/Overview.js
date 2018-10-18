@@ -29,7 +29,7 @@ const Overview = () => {
           <p className="text-muted text-left pl-4">Ab deserunt eruditionem a an eram expetendis est ita anim constias, ne ipsum. Noster quibusdam hic fidelissimae, ex velit et anim ita illum arbitror sed dolor eram, anim ullamco illustriora.</p>
         </div>
         <div className="d-flex justify-content-between align-items-start">
-          <p className="text-size">Vission:</p>
+          <p className="text-size">Vision:</p>
           <p className="text-muted text-left pl-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Ab deserunt eruditionem a an eram expetendis est ita anim constias, ne ipsum.</p>
         </div>
       </div>

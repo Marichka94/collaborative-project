@@ -3,17 +3,28 @@ import Footer from "../Footer/Footer"
 import NavbarUser from "../NavbarUser/NavbarUser"
 import Sidebar from "../Sidebar/Sidebar"
 import Overview from "../Overview/Overview"
+import Roadmap from "../Roadmap/Roadmap"
+import Goals from "../Goals/Goals"
+import Education from "../Education/Education"
 import './Userpage.css'
 
 class Userpage extends Component {
+  state = {
+    currentState : <Overview />
+  }
+
+  isClicked() {
+    
+  }
+
   render() {
     return(
       <div>
         <NavbarUser />
         <div className='d-flex'>
-          <Sidebar />
+          <Sidebar clicked={this.state.currentState}/>
           <div className='content text-center'>
-            <Overview />
+            {this.state.currentState}
           </div>
         </div>
         <Footer />
